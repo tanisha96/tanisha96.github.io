@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3a7eef1-dbe1-429b-885b-ded5f0179363" name="Default Changelist" comment="some changes, favicons">
+      <change afterPath="$PROJECT_DIR$/img/exp/barclays.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp/deloitte-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp/iimb-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp/iiml-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp/skinzy-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp/spit-logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/footer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/header.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/templatemo-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/templatemo-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +31,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -56,6 +67,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="some changes, favicons" />
     <option name="LAST_COMMIT_MESSAGE" value="some changes, favicons" />
   </component>
