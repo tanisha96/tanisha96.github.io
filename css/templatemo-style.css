@@ -599,3 +599,8 @@ p {
     max-width: 200px;
     margin: auto;
 }
+
+.pad-others {
+  padding-left: 10px;
+  padding-right: 10px;
+}
