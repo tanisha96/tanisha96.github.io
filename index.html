@@ -15,9 +15,9 @@
   </head>
   <body>    
     <!-- Hero section -->
-    <section id="hero" class="text-white tm-font-big tm-parallax">
+
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+      <nav class="navbar navbar-expand-md tm-navbar scroll" id="tmNav">
         <div class="container">   
           <div class="tm-next">
               <a href="#hero" class="navbar-brand">Tanisha Kulkarni</a>
@@ -41,7 +41,8 @@
           </div>        
         </div>
       </nav>
-      
+
+    <section id="hero" class="text-white tm-font-big tm-parallax">
       <div class="text-center tm-hero-text-container">
         <div class="tm-hero-text-container-inner">
             <h2 class="tm-hero-title">Tanisha Kulkarni</h2>
@@ -369,15 +370,15 @@
           background_image_parallax($(".tm-parallax"), 0.30, true);
         }, true);
 
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
+<!--        // Detect window scroll and update navbar-->
+<!--        $(window).scroll(function(e){          -->
+<!--          if($(document).scrollTop() > 120) {-->
+<!--            $('.tm-navbar').addClass("scroll");-->
+<!--          } else {-->
+<!--            $('.tm-navbar').removeClass("scroll");-->
+<!--          }-->
+<!--        });-->
+<!--        -->
         // Close mobile menu after click 
         $('#tmNav a').on('click', function(){
           $('.navbar-collapse').removeClass('show'); 
@@ -390,7 +391,7 @@
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
         $("a").on('click', function(event) {
           if (this.hash !== "") {
-            event.preventDefault();
+<!--            event.preventDefault();-->
             var hash = this.hash;
 
             $('html, body').animate({

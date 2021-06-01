@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3a7eef1-dbe1-429b-885b-ded5f0179363" name="Default Changelist" comment="some changes, favicons">
-      <change afterPath="$PROJECT_DIR$/achievements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ach/akanksha-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ach/csi.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ach/deloitte-logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ach/maverick.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ach/spark.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ach/tm.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
