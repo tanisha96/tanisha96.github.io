@@ -17,7 +17,7 @@
     <!-- Hero section -->
 
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar scroll" id="tmNav">
+    <nav class="navbar navbar-expand-md tm-navbar scroll" id="tmNav">
         <div class="container">
           <div class="tm-next">
               <a href="#hero" class="navbar-brand">Tanisha Kulkarni</a>
@@ -146,20 +146,19 @@
             <img class="experience-logo" src="img/exp/barclays.jpg">
             <h4 class="text-center tm-text-primary mb-4">Barclays Global Service Center</h4>
             <h6 class="text-center tm-text-primary mb-4">Analyst and UI Developer, Aug 2018- Present</h6>
-            <p class="text-center">
+            <p class="text-justify">
               Developer for 10+ global Barclays websites majorly:
               <a href="https://www.barclays.co.uk">Barclays</a> and <a href="https://www.barclaycard.co.uk/personal">Barclaycard</a>
-            </p>
-            <p>Digital Accessibility | Responsive Web Design</p>
-            <p>Adobe Experience Manager | Java | HTML, HTL | CSS, SCSS | Jquery, JS | Preact</p>
-            <p>Veracode | Sonarqube | Confluence | Stash, Bitbucket</p>
+            <br>Digital Accessibility | Responsive Web Design
+            <br>Adobe Experience Manager | Java | HTML, HTL | CSS, SCSS | Jquery, JS | Preact
+            <br>Veracode | Sonarqube | Confluence | Stash, Bitbucket</p>
           </div>
 
           <div class="col-lg-6 mt-5 mt-lg-0 text-center">
             <img class="experience-logo" src="img/exp/skinzy-logo.jpg">
             <h4 class="text-center tm-text-primary mb-4">Skinzy Software Solutions Pvt. Ltd., Mumbai</h4>
             <h6 class="text-center tm-text-primary mb-4">Intern, June - Aug 2018</h6>
-            <p class="text-center">
+            <p class="text-justify">
               Coordinated between Developers and Product Owners to aid communication of the end goal requirements of
               the Product Owners (Doctors) to the development unit.<br>
               Oversaw a campaign developed to help attract investment from various angel investor and third-party
@@ -170,7 +169,7 @@
             <img class="experience-logo" src="img/exp/deloitte-logo.jpg">
             <h4 class="text-center tm-text-primary mb-4">Deloitte Touche Tohmatsu</h4>
             <h6 class="text-center tm-text-primary mb-4">Intern, June - July 2017</h6>
-            <p class="text-center">
+            <p class="text-justify">
               Worked on a messenger ChatBot for Business requirements.<br>
               Wit.ai | Python Flask | MongoDB | Heroku
             </p>
@@ -179,7 +178,7 @@
             <img class="experience-logo" src="img/exp/iiml-logo.png">
             <h4 class="text-center tm-text-primary mb-4">IIM Lucknow</h4>
             <h6 class="text-center tm-text-primary mb-4">Intern, June - July 2017</h6>
-            <p class="text-center">
+            <p class="text-justify">
               Learned basic concepts of Data Analytics, Statistics and Econometrics to solve business cases published by Harvard Business School such as 'Factors affecting difference in airline prices’ and ‘Factors determining MBA starting salaries’, using R programming.<br>
               Completed a Capstone Project on factors which determine Hotel Room pricing in the Indian market using Data Analytics on R programming. Determined factors that affect hotel room pricing.
             </p>
@@ -254,150 +253,143 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+          function getOffSet(){
+            var _offset = 450;
+            var windowHeight = window.innerHeight;
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        }
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
-
-        return _offset;
-      }
-
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
-
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
-
-        if(forceSet) {
-          setParallaxPosition($doc, multiplier, $object);
-        } else {
-          $(window).scroll(function(){
-            setParallaxPosition($doc, multiplier, $object);
-          });
-        }
-      };
-
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        $(window).scroll(function(){
-          var firstTop = $object.offset().top,
-              pos = $(window).scrollTop(),
-              yPos = Math.round((multiplier * (firstTop - pos)) - 186);
-
-          var bg_css = 'center ' + yPos + 'px';
-
-          $object.css({"background-position" : bg_css });
-        });
-      };
-
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);
-
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
-
-<!--        // Detect window scroll and update navbar-->
-<!--        $(window).scroll(function(e){          -->
-<!--          if($(document).scrollTop() > 120) {-->
-<!--            $('.tm-navbar').addClass("scroll");-->
-<!--          } else {-->
-<!--            $('.tm-navbar').removeClass("scroll");-->
-<!--          }-->
-<!--        });-->
-<!--        -->
-        // Close mobile menu after click
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show');
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav();
-
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-<!--            event.preventDefault();-->
-            var hash = this.hash;
-
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 400, function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
-
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
+            if(windowHeight > 500) {
+              _offset = 400;
             }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
+            if(windowHeight > 680) {
+              _offset = 300
             }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
+            if(windowHeight > 830) {
+              _offset = 210;
             }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+
+            return _offset;
           }
-        ]
-        });
-      });
+
+          function setParallaxPosition($doc, multiplier, $object){
+            var offset = getOffSet();
+            var from_top = $doc.scrollTop(),
+              bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+            $object.css({"background-position" : bg_css });
+          }
+
+          // Parallax function
+          // Adapted based on https://codepen.io/roborich/pen/wpAsm
+          var background_image_parallax = function($object, multiplier, forceSet){
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            // $object.css({"background-attatchment" : "fixed"});
+
+            if(forceSet) {
+              setParallaxPosition($doc, multiplier, $object);
+            } else {
+              $(window).scroll(function(){
+                setParallaxPosition($doc, multiplier, $object);
+              });
+            }
+          };
+
+          var background_image_parallax_2 = function($object, multiplier){
+            multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+            multiplier = 1 - multiplier;
+            var $doc = $(document);
+            $object.css({"background-attachment" : "fixed"});
+            $(window).scroll(function(){
+              var firstTop = $object.offset().top,
+                  pos = $(window).scrollTop(),
+                  yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+              var bg_css = 'center ' + yPos + 'px';
+
+              $object.css({"background-position" : bg_css });
+            });
+          };
+
+          $(function(){
+            // Hero Section - Background Parallax
+            background_image_parallax($(".tm-parallax"), 0.30, false);
+            background_image_parallax_2($("#contact"), 0.80);
+
+            // Handle window resize
+            window.addEventListener('resize', function(){
+              background_image_parallax($(".tm-parallax"), 0.30, true);
+            }, true);
+
+
+
+            // Close mobile menu after click
+            $('#tmNav a').on('click', function(){
+              $('.navbar-collapse').removeClass('show');
+            })
+
+            // Scroll to corresponding section with animation
+            $('#tmNav').singlePageNav();
+
+            // Add smooth scrolling to all links
+            // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+            $("a").on('click', function(event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 400, function(){
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+
+            // Pop up
+            $('.tm-gallery').magnificPopup({
+              delegate: 'a',
+              type: 'image',
+              gallery: { enabled: true }
+            });
+
+            // Gallery
+            $('.tm-gallery').slick({
+              dots: true,
+              infinite: false,
+              slidesToShow: 5,
+              slidesToScroll: 2,
+              responsive: [
+              {
+                breakpoint: 1199,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+            });
+          });
     </script>
   </body>
 </html>
