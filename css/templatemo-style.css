@@ -500,6 +500,12 @@ p {
   line-height: 1.9;
 }
 
+.tm-intro-img {
+    height: 200px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
@@ -538,6 +544,9 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
+    border-radius: 50%;
+    padding-bottom: 20px;
   }
 
   .tm-btn-submit {
