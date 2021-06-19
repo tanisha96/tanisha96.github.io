@@ -598,6 +598,7 @@ p {
     width: auto;
     max-width: 200px;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .pad-others {
